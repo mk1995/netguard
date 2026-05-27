@@ -6,16 +6,8 @@ This document serves as both a development guide and a **Play Store Publication 
 
 ---
 
-## 🚀 Play Store Listing Assets (Copy & Paste)
-
-### 🏷️ App Title (Max 30 chars)
-`NetGuard AI: Subnet & IR Lab`
-
-### 📝 Short Description (Max 80 chars)
 `Audit IoT security, discover network devices, analyze Wi-Fi & replay IR signals.`
 
-### 📖 Full Description (Max 4000 chars)
-```text
 NetGuard AI is a comprehensive local network discovery, IoT vulnerability auditor, and hardware signal diagnostic laboratory designed for security enthusiasts, sysadmins, and smart home specialists. 
 
 Perform deeply informative subnet scans, parse wireless environments, evaluate IP camera streams, audit IoT firmware endpoints, and diagnose Consumer Infrared (IR) signals—all securely from your Android device.
@@ -53,9 +45,7 @@ Perform deeply informative subnet scans, parse wireless environments, evaluate I
 7. COMPREHENSIVE COMPLIANCE & SCORING
 • Computes your overall Subnet Defensibility Rating.
 • Generates high-fidelity HTML and PDF audit sheets to export and hard-harden your configuration interfaces.
-```
 
----
 
 ## 📐 Technical Architecture Stack
 
@@ -83,19 +73,6 @@ To pass Google Play Policy reviews successfully, your console listing must decla
 ### 3. Loopback `VpnService` Disclosure
 *   **Why it's needed:** Powers the locally hosted non-root packet sniffer console. It creates an on-device isolated loopback adapter to parse network layer headers.
 *   **Play Store Disclosure:** *“NetGuard AI utilizes a local Android VpnService interface to analyze raw local network packets for dangerous unencrypted traffic (such as HTTP and plain text password exposures). All traffic calculations occur strictly on your physical device. No external connection, server dispatch, or visual data collection occurs.”*
-
----
-
-## 💼 How to Compile & Install locally
-1. Clone this repository directly.
-2. Ensure you have Android Studio installed.
-3. Open the project root folder.
-4. Clean and test packages:
-   ```bash
-   gradle clean
-   gradle :app:testDebugUnitTest
-   ```
-5. Install debug APK directly to your device and run.
 
 ---
 
