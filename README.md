@@ -1,6 +1,6 @@
-# NetGuard AI - Android Security, Network Discovery & IR Diagnostic Lab
+# NetGuard - Android Security, Network Discovery & IR Diagnostic Lab
 
-NetGuard AI is a high-performance, edge-computing network security and hardware diagnostic utility built for Android. Designed using modern Android development practices (MVVM, Kotlin Coroutines, Jetpack Compose, and Material Design 3), NetGuard AI acts as a Swiss-army knife for cybersecurity students, network administrators, and IoT device auditors.
+NetGuard is a high-performance, edge-computing network security and hardware diagnostic utility built for Android. Designed using modern Android development practices (MVVM, Kotlin Coroutines, Jetpack Compose, and Material Design 3), NetGuard AI acts as a Swiss-army knife for cybersecurity students, network administrators, and IoT device auditors.
 
 This document serves as both a development guide and a **Play Store Publication Kit** containing required disclosures, Store Listing assets, and metadata to guarantee a successful and policy-compliant release on Google Play.
 
