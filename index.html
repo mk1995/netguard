@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - NetGuard AI</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border: 1px solid #e1e4e8;
+        }
+        h1 { border-bottom: 2px solid #0366d6; padding-bottom: 10px; color: #0366d6; font-size: 28px; }
+        h2 { color: #24292e; margin-top: 30px; font-size: 20px; border-bottom: 1px solid #eaecef; padding-bottom: 5px; }
+        h3 { color: #444; font-size: 16px; }
+        p, li { color: #444; font-size: 15px; }
+        ul { padding-left: 20px; }
+        .highlight-box {
+            background-color: #fffbdd;
+            border-left: 4px solid #d93025;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 12px;
+            color: #6a737d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy for NetGuard AI</h1>
+    <p><strong>Last Updated: May 2026</strong></p>
+    
+    <p>This privacy policy governs your use of the software application <strong>NetGuard AI: Subnet & IR Lab</strong> ("Application") for mobile devices, which was created as an educational network discovery, IoT vulnerability auditor, and hardware signal diagnostic tool. </p>
+    
+    <p>Our core philosophy is absolute data minimization: <strong>NetGuard AI processes all computations, scans, and diagnostic analytics locally on your device. We do not operate external database servers, and we do not collect, monetize, or harvest your personal data.</strong></p>
+
+    <h2>1. Information Collection and Use</h2>
+    <p>The Application performs purely local technical operations. It does not require user registration, accounts, or profiles. No personal identity data (such as your name, email address, or phone number) is ever collected by the developer.</p>
+
+    <h2>2. Sensitive Permissions & Core Features</h2>
+    <p>To provide high-fidelity diagnostic capabilities, the Application requires specific system permissions. These are utilized strictly in the following manner:</p>
+    
+    <h3>A. Location Access (ACCESS_FINE_LOCATION & ACCESS_COARSE_LOCATION)</h3>
+    <p>Android system rules bundle wireless environment scans (SSID, BSSID, and overlapping channel metrics) under location infrastructure permissions. NetGuard AI accesses these parameters solely to discover local wireless SSID channel grids and analyze network interference in your general environment. Your physical location is never tracked, stored, or transmitted.</p>
+
+    <h3>B. Hardware Signal Auditing (TRANSMIT_IR)</h3>
+    <p>The Application requests access to the device's physical ConsumerIrManager hardware subsystem. This permission is used exclusively to emit user-triggered raw infrared command packets (such as TV, Air Conditioner, or legacy appliance debug pulses) for diagnostic lab evaluations.</p>
+
+    <div class="highlight-box">
+        <h3>C. Crucial Disclosure: Use of Android VpnService</h3>
+        <p>NetGuard AI utilizes a local, non-root Android <code>VpnService</code> loopback interface to intercept outbound local network packets. This allows the Deep VPN Auditor module to parse network layer headers and flag unencrypted, insecure plaintext streams (such as raw HTTP or exposed RTSP camera feeds) leaking credentials in real time.</p>
+        <p><strong>Strict Local Sandbox:</strong> The VPN routing is completely self-contained on your physical device. It creates an isolated loopback adapter. Absolutely no network traffic is tunneled to external proxy servers, third-party analytics platforms, or remote architectures. No traffic data is saved or transmitted off the device.</p>
+    </div>
+
+    <h2>3. Local Storage Architecture</h2>
+    <p>The Application uses an on-device Room SQL Database to store configuration elements populated explicitly by the user, including:</p>
+    <ul>
+        <li>Device manufacturer footprints and OUI resolution matrices.</li>
+        <li>Custom-configured IR command pulse arrays.</li>
+        <li>Historical logs of your localized subnet diagnostic sweeps.</li>
+    </ul>
+    <p>This database lives securely within the application's private sandbox storage directory and is completely erased if you uninstall the application.</p>
+
+    <h2>4. Third-Party Access & Infrastructure</h2>
+    <p>Because the Application operates entirely offline or via direct local socket interaction with your immediate subnet nodes, no third-party entities have access to any data mapped by NetGuard AI. We do not embed ad-tracking networks, behavioral profiling kits, or cloud telemetry SDKs.</p>
+
+    <h2>5. Children’s Privacy</h2>
+    <p>We do not use the Application to knowingly solicit data from or market to children under the age of 13. Since no data is collected, parents can rest assured that network testing data remains completely localized to the device.</p>
+
+    <h2>6. Changes to this Policy</h2>
+    <p>We may update our Privacy Policy from time to time to reflect hardware permission evolutions or Google Play Console policy adjustments. You are advised to review this page periodically for any updates.</p>
+
+    <h2>7. Contact Information</h2>
+    <p>If you have any questions regarding privacy while using the Application, or have questions about our diagnostic implementations, please open an issue on our official open-source GitHub project repository.</p>
+
+    <div class="footer">
+        <p>NetGuard AI • Built for Open Source Educational Diagnostic Research</p>
+    </div>
+</div>
+
+</body>
+</html>
